@@ -10,7 +10,7 @@ Resources:
       CodeUri: ./
       Events:
         MyTimeApi:
-          Type: AWS::Serverless::Api
+          Type: AWS::ApiGateway::Stage
           Properties:
             StageName: dev
             Path: /TimeResource
