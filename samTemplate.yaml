@@ -10,9 +10,8 @@ Resources:
       CodeUri: ./
       Events:
         MyTimeApi:
-          Type: AWS::ApiGateway::Stage
+          Type: Api
           Properties:
-            StageName: dev
             Path: /TimeResource
             Method: GET
             
