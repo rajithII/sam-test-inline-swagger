@@ -12,7 +12,6 @@ Resources:
         MyTimeApi:
           Type: Api
           Properties:
-            StageName: Dev
             Path: /TimeResource
             Method: GET
             
