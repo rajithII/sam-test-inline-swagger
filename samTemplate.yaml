@@ -13,6 +13,6 @@ Resources:
           Type: Api
           Properties:
             StageName: Dev
-            Path: /TimeResource
-            Method: GET
+             Path: /TimeResource
+             Method: GET
             
