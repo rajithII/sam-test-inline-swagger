@@ -5,8 +5,7 @@ Resources:
   MyBetaStack: 
     Type: AWS::ApiGateway::Deployment
     Properties:
-      Description: 
-      RestApiId:
+      Description: Testapi
       StageDescription: Testing
       StageName: Staging
   TimeFunction:
