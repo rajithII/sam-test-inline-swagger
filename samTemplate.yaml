@@ -7,7 +7,7 @@ Resources:
     Properties:
       Description: 
       RestApiId:
-      StageDescription:
+      StageDescription: Testing
       StageName: Staging
   TimeFunction:
     Type: AWS::Serverless::Function
