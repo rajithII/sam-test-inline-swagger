@@ -3,10 +3,8 @@ Transform: AWS::Serverless-2016-10-31
 Description: Outputs the time
 Resources:
   MyBetaStack: 
-    Type: AWS::ApiGateway::Deployment
+    Type: AWS::Serverless::Api
     Properties:
-      Description: Testapi
-      StageDescription: Testing
       StageName: Staging
   TimeFunction:
     Type: AWS::Serverless::Function
