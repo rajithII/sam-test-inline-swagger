@@ -5,7 +5,7 @@ Resources:
   MyBetaStack: 
     Type: AWS::Serverless::Api
     Properties:
-      StageName: Staging
+      StageName: Qa
   TimeFunction:
     Type: AWS::Serverless::Function
     Properties:
