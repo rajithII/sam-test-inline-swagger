@@ -15,7 +15,7 @@ Resources:
       Runtime: nodejs6.10
       CodeUri: ./
       Events:
-        MyBetaStack:
+        MyTimeApi:
           Type: Api
           Properties:
             Path: /TimeResource
