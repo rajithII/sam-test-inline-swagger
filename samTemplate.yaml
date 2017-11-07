@@ -3,7 +3,7 @@ Transform: AWS::Serverless-2016-10-31
 Description: Outputs The Time
 Resources:
   TimeFunction:
-    Type: AWS::Serverless::Api
+    AWS::ApiGateway::Deployment
     Properties: 
       Properties:
             Path: /TimeResource
