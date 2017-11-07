@@ -1,6 +1,6 @@
 Resources:
  Type: AWS::ApiGateway::RestApi
-    Properties: 
-      Name: Timefunction
+ Properties: 
+   Name: Timefunction
     
       
