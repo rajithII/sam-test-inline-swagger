@@ -14,7 +14,7 @@ Resources:
       Runtime: nodejs6.10
       CodeUri: ./
       Events:
-        ProxyApiRoot
+        ProxyApiRoot:
           Type: Api
           Properties:
             RestApiId: !Ref My TimeApi
