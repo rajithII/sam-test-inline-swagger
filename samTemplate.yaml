@@ -1,17 +1,22 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: Outputs the time
-Resources:
-  TimeFunction:
-    Type: AWS::Serverless::Function
-    Properties:
-      Handler: index.handler
-      Runtime: nodejs6.10
-      CodeUri: ./
-      Events:
-        MyTimeApi:
-          Type: Api
+Resources: 
+    MyTimeApi:
+         Type: AWS::Serverless::Api
           Properties:
-            Path: /TimeResource
-            Method: GET
-            StageName: Stage
+              DefinitionUri: API.yml
+              StageName: Stage
+    TimeFunction:
+        Type: AWS::Serverless::Function
+        Properties:
+           Handler: index.handler
+           Runtime: nodejs6.10
+           CodeUri: ./
+           Events:
+               ProxyApiRoot
+                   Type: Api
+                   Properties:
+                       RestApiId: !Ref My TimeApi
+                       Path: /TimeResource
+                       Method: GET
