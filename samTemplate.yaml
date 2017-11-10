@@ -15,7 +15,7 @@ Resources:
       CodeUri: ./
       Role: !GetAtt DefaultRole.Arn
       Events:
-        MyTimeApi:
+        ProxyApiRoot:
           Type: Api
           Properties:
             RestApiId: !Ref MyTimeApi
