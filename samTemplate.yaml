@@ -25,7 +25,7 @@ Resources:
     Properties:
       Handler: index.handler
       Runtime: nodejs6.10
-      CodeUri: s3://<bucket>/inline_swagger.zip
+      CodeUri: ./
       Events:
         GetApi:
           Type: Api
