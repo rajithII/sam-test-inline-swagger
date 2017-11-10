@@ -6,7 +6,7 @@ Resources:
     Type: AWS::Serverless::Api
     Properties:
         StageName: prod
-        DefinitionBody:
+        DefinitionUri:
             swagger: 2.0
             info:
               title:
