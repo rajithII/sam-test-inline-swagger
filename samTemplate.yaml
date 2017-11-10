@@ -13,7 +13,6 @@ Resources:
       Handler: index.handler
       Runtime: nodejs6.10
       CodeUri: ./
-      Role: !GetAtt DefaultRole.Arn
       Events:
         ProxyApiRoot:
           Type: Api
