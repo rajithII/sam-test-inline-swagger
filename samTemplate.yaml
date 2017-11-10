@@ -21,19 +21,3 @@ Resources:
             RestApiId: !Ref MyTimeApi
             Path: /TimeResource
             Method: GET
-  DefaultRole:
-    Type: "AWS::IAM::Role"
-    Properties:
-      ManagedPolicyArns:
-          - "arn:aws:iam::aws:policy/service-role/AWSLambdaVPCAccessExecutionRole"
-      AssumeRolePolicyDocument:
-        Version: "2012-10-17"
-        Statement:
-          -
-            Sid: "AllowLambdaServiceToAssumeRole"
-            Effect: "Allow"
-            Action:
-              - "sts:AssumeRole"
-            Principal:
-              Service:
-                - "lambda.amazonaws.com" 
