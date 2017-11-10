@@ -18,7 +18,7 @@ Resources:
                     httpMethod: POST
                     type: aws_proxy
                     uri:
-                      Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${MyLambdaFunction:prod.Arn}/invocations
+                      Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:614162377378:function:myfirst-lambda:prod/invocations
                   responses: {}
   MyLambdaFunction:
     Type: AWS::Serverless::Function
