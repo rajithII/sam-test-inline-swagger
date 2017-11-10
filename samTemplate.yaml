@@ -12,14 +12,14 @@ Resources:
               title:
                 Ref: AWS::StackName
             paths:
-              /get:
-                get:
-                 x-amazon-apigateway-integration:
-                 httpMethod: POST
-                 type: aws_proxy
-                 uri:
-                   Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${MyLambdaFunction.Arn}:prod/invocations
-                 responses: {}
+              "/get":
+                  get:
+                   x-amazon-apigateway-integration:
+                   httpMethod: POST
+                   type: aws_proxy
+                   uri:
+                     Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${MyLambdaFunction.Arn}:prod/invocations
+                   responses: {}
   MyLambdaFunction:
     Type: AWS::Serverless::Function
     Properties:
