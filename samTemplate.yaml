@@ -15,7 +15,7 @@ Resources:
                 Ref: AWS::StackName
             paths:
               "/get":
-                  get:
+                  GET:
                    x-amazon-apigateway-integration:
                      httpMethod: POST
                      type: aws_proxy
