@@ -15,9 +15,9 @@ Resources:
                 Ref: AWS::StackName
             paths:
               "/get":
-                  get:
+                  GET:
                    x-amazon-apigateway-integration:
-                     httpMethod: POSThttp://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/Welcome.html
+                     httpMethod: POST
                      type: aws_proxy
                      uri:
                        Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:614162377378:function:MyBetaStack-MyLambdaFunction-DC9ITJRUA4I6:prod/invocations
