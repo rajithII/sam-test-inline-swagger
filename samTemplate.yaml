@@ -6,8 +6,6 @@ Resources:
     Type: AWS::Serverless::Api
     Properties:
         StageName: prod
-        Variables:
-              alias: prod
         DefinitionBody:
             swagger: 2.0
             info:
