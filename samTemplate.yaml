@@ -7,7 +7,7 @@ Resources:
     Properties:
         StageName: prod
         Variables:
-          alias: prod
+              alias: prod
         DefinitionBody:
             swagger: 2.0
             info:
